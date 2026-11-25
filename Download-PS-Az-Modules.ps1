@@ -1,4 +1,4 @@
-function Download-PSModule {
+function Download-PS-Az-Modules {
     <#
     .SYNOPSIS
         Downloads the Az PowerShell modules from the PowerShell Gallery as .nupkg files.
@@ -10,9 +10,9 @@ function Download-PSModule {
     .PARAMETER OutDir
         Base folder. Each module is saved in its own subfolder named after the module.
     .EXAMPLE
-        Download-PSModule
+        Download-PS-Az-Modules
     .EXAMPLE
-        Download-PSModule -OutDir 'D:\Packages'
+        Download-PS-Az-Modules -OutDir 'D:\Packages'
     #>
     [CmdletBinding()]
     param(

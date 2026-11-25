@@ -1,4 +1,4 @@
-# Download-PSModule
+# Download-PS-Az-Modules
 
 A PowerShell function that downloads the Az PowerShell modules from the PowerShell Gallery as `.nupkg` files so they can be installed manually or offline. It is meant for machines where `Install-Module` does not work — for example when the NuGet provider cannot be installed, or when TLS or proxy settings block PowerShell's built-in downloader.
 
@@ -42,13 +42,13 @@ A PowerShell function that downloads the Az PowerShell modules from the PowerShe
 ### Basic — download all Az modules to the default folder
 
 ```powershell
-Download-PSModule
+Download-PS-Az-Modules
 ```
 
 ### Custom output folder
 
 ```powershell
-Download-PSModule -OutDir "D:\Packages"
+Download-PS-Az-Modules -OutDir "D:\Packages"
 ```
 
 ## Output
