@@ -24,11 +24,11 @@ A PowerShell function that downloads the Az PowerShell modules from the PowerShe
 
 1. Clone the repository or download the script:
    ```powershell
-   git clone https://github.com/abotelhofilho/func_Download-PSModule.git
+   git clone https://github.com/abotelhofilho/Download-PS-Az-Modules.git
    ```
 2. Dot-source the function into your PowerShell session:
    ```powershell
-   . .\func_Download-PSModule.ps1
+   . .\Download-PS-Az-Modules.ps1
    ```
 
 ## Parameters
