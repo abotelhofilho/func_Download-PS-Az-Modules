@@ -24,7 +24,7 @@ A PowerShell function that downloads the Az PowerShell modules from the PowerShe
 
 1. Clone the repository or download the script:
    ```powershell
-   git clone https://github.com/abotelhofilho/func_Download-PSModule-Az.git
+   git clone https://github.com/abotelhofilho/func_Download-PSModule.git
    ```
 2. Dot-source the function into your PowerShell session:
    ```powershell
@@ -51,14 +51,6 @@ Download-PSModule
 Download-PSModule -OutDir "D:\Packages"
 ```
 
-### Download fewer modules
-
-The module list is the `$modules` variable inside the function. Edit it to keep only the modules you need. For example, `New-AzStorageContext` only needs:
-
-```powershell
-$modules = 'Az.Accounts', 'Az.Storage'
-```
-
 ## Output
 
 Each package is saved as `<OutDir>\<ModuleName>\<ModuleName>.nupkg`:
@@ -78,7 +70,6 @@ powershellModule\
 
 - The latest version of each module is downloaded.
 - The module list is hard-coded and may drift from the current Az release. The authoritative list is in the **Dependencies** section of the [Az package page](https://www.powershellgallery.com/packages/Az).
-- Every Az module depends on `Az.Accounts`, so always include it.
 - To install the downloaded packages, use [`Install-NupkgModule`](https://github.com/abotelhofilho/func_Install-NupkgModule):
   ```powershell
   Install-NupkgModule -SourcePath "$HOME\Downloads\powershellModule"
