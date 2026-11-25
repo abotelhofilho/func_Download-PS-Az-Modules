@@ -28,7 +28,7 @@ A PowerShell function that downloads the Az PowerShell modules from the PowerShe
    ```
 2. Dot-source the function into your PowerShell session:
    ```powershell
-   . .\func_Download-PSModule-Az.ps1
+   . .\func_Download-PSModule.ps1
    ```
 
 ## Parameters
